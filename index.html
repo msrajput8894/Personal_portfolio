@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
+    <script defer src="script.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/bab7bad494.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="flex">
+          <p class="logo"><span class="red">M</span>ahendra.</p>
+          <ul class="nav-list flex">
+            <li><a href="#home" class="nav-links">Home</a></li>
+            <li><a href="#about" class="nav-links">About</a></li>
+            <li><a href="#services" class="nav-links">Services</a></li>
+            <li><a href="#portfolio" class="nav-links">Portfolio</a></li>
+            <li><a href="#contact" class="nav-links">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ----------------Home section----------------- -->
+      <section class="home" id="home">
+        <div class="container">
+          <div class="main-header">
+            <div class="header-text flex">
+              <p class="title">UI/UX Designer</p>
+              <h1 class="primary-heading">
+                Hi, I'm <span class="red">Mahendra</span> <br />
+                Rajput from India
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- -------------------About section----------------------- -->
+
+      <section class="about" id="about">
+        <div class="container">
+          <div class="row flex">
+            <div class="aobut-col-1">
+              <img src="images/My photo.jpg" alt="" class="my-photo" />
+            </div>
+            <div class="about-col-2">
+              <h2 class="section-heading">About Me</h2>
+              <p class="description">
+                I am a software engineer with 2 years of experience,
+                specializing in frontend technologies. I am passionate about
+                creating user-friendly and visually appealing web applications.
+                With a strong foundation in HTML, CSS, and JavaScript, I strive
+                to deliver high-quality code and delightful user experiences.
+              </p>
+
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('Experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('Education')">
+                  Education
+                </p>
+              </div>
+
+              <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                  <li><span>UI/UX</span>Designing Web/App interfaces</li>
+                  <li><span>Web Development</span>Web app development</li>
+                  <li><span>App Development</span>Buiding Android/iOS apps</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="Experience">
+                <ul>
+                  <li>
+                    <span>2023 - current</span>Software Engineer at LTIMindtree
+                  </li>
+                  <li>
+                    <span>2022 - 2023</span>Software Engineer at Mindtree
+                    Limited
+                  </li>
+                  <li>
+                    <span>2020 - 2022</span>Production Engineer at SOM Autotech
+                    Pvt Ltd.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="Education">
+                <ul>
+                  <li><span>2014</span>SSC from Maharashtra State Board</li>
+                  <li><span>2016</span>HSC from Maharashtra State Board</li>
+                  <li>
+                    <span>2020</span>Batchlors of Engineering form Pune
+                    University
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----------------Services Section----------------- -->
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="section-heading">Services</h2>
+
+          <div class="services-list">
+            <div>
+              <i class="fa-solid fa-code"></i>
+              <h2>Web Design</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+                id a quidem placeat, deleniti debitis facere mollitia quasi
+                voluptatibus aliquam?
+              </p>
+              <a href="#" class="learn-more-btn">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-solid fa-crop"></i>
+              <h2>UI/UX Design</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+                id a quidem placeat, deleniti debitis facere mollitia quasi
+                voluptatibus aliquam?
+              </p>
+              <a href="#" class="learn-more-btn">Learn more</a>
+            </div>
+            <div>
+              <i class="fa-brands fa-app-store"></i>
+              <h2>App Design</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+                id a quidem placeat, deleniti debitis facere mollitia quasi
+                voluptatibus aliquam?
+              </p>
+              <a href="#" class="learn-more-btn">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ----------------------Portfolio---------------------------- -->
+
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="section-heading">My Work</h2>
+          <div class="work-list">
+            <div class="work">
+              <img src="images/work-1.png" alt="web page" />
+              <div class="layer">
+                <h3>Basic Porfolio page</h3>
+                <p>
+                  this my personal portfolio page which has information about
+                  me, project I have worked on and contact info.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://portfolio-mahendrarajput.netlify.app/"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-2.png" alt="web page" />
+              <div class="layer">
+                <h3>Food order Website</h3>
+                <p>
+                  Omnifood is the responsive web app for ordering daily healthy
+                  meals online at your doorstep.
+                </p>
+                <a target="_blank" href="https://omnifood-mahendra.netlify.app/"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+            <div class="work">
+              <img src="images/work-3.png" alt="web page" />
+              <div class="layer">
+                <h3>UsabilityHub clone</h3>
+                <p>
+                  I have created the clone of UsabilityHub.com in this project.
+                  this website is made using flexbox.
+                </p>
+                <a
+                  target="_blank"
+                  href="https://mahendra-usability-hub-clone.netlify.app/"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="btn">See more</a>
+        </div>
+      </section>
+
+      <!-- ------------------contact section------------------ -->
+
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <div class="row flex">
+            <div class="left-contact flex">
+              <h2 class="section-heading">Contact Me</h2>
+              <p class="email">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="mailto:msrajput8894@gmail.com"
+                  >msrajput8894@gmail.com</a
+                >
+              </p>
+              <p class="phone">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:8208997720"> 8208997720</a>
+              </p>
+              <div class="social-links flex">
+                <a target="_blank" href="https://github.com/msrajput8894" class="social-link"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a target="_blank" href="https://www.linkedin.com/in/mahendrasing-rajput-883908209/" class="social-link"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a target="_blank" href="https://instagram.com/_mahendra_17?igshid=NGExMmI2YTkyZg==" class="social-link"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </div>
+              <a href="images/My CV.pdf" download class="btn btn2"
+                >Download CV</a
+              >
+            </div>
+            <div class="right-contact flex">
+              <form name="submit-to-google-sheet" action="#">
+                <input
+                  type="text"
+                  name="Name"
+                  id="name"
+                  required
+                  placeholder="Your Name"
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  id="email"
+                  required
+                  placeholder="Your Email"
+                />
+                <textarea
+                  name="Message"
+                  id="message"
+                  rows="6"
+                  required
+                  placeholder="your message"
+                ></textarea>
+                <button class="btn btn2" type="submit">Submit now</button>
+              </form>
+            </div>
+          </div>
+          <span id="msg"></span>
+        </div>
+      </section>
+
+      <footer>
+        <div class="container">
+          <div class="footer">
+            <p>
+              copyright &copy; at Mahendra, Made with
+              <i class="fa-solid fa-heart"></i> by Mahendra Rajput
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- -------------------JavaScript Code------------------------ -->
+    <!-- <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script> -->
+
+    <!-- ---------------------contact form script----------------------- -->
+
+    
+  </body>
+</html>

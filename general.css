@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'poppins',sans-serif;
+}
+
+.html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #000;
+  color: #fff;
+  /* overflow: hidden; */
+}
+
+
+
+.container{
+  max-width: 120rem;
+  margin: 0 auto;
+  padding:0 4.8rem;
+}
+
+
+
+
+
+.flex{
+  display: flex;
+}
+
+.red{
+  color: #ff004f;
+}
