@@ -4,7 +4,7 @@
 
 ## Description
 
-This is my personal portfolio page showcasing my skills, projects, work experience, and education. The portfolio is built using HTML, CSS, and JavaScript.
+Welcome to my personal portfolio page, where I showcase my skills, projects, work experience, and education. This portfolio is a representation of my journey as a developer, and it's built using HTML, CSS, and JavaScript.
 
 ## Table of Contents
 
@@ -27,11 +27,11 @@ This is my personal portfolio page showcasing my skills, projects, work experien
 
 ## Screenshot
 
-![Portfolio Screenshot](images\portfolio-screenshot.png) 
+![Portfolio Screenshot](images/portfolio-screenshot.png) 
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
+1. Clone the repository: `git clone https://github.com/msrajput8894/Personal_portfolio.git`
 2. Open the `index.html` file in your web browser.
 
 ## Usage
