@@ -1,5 +1,4 @@
 # Personal_portfolio
-# Personal Portfolio Page
 
 ![Portfolio Screenshot](images\portfolio-screenshot.png)
 
