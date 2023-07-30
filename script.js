@@ -27,7 +27,7 @@ function smoothScroll(target, margin) {
 
 // script for contact form to submit the data to google sheet.
 const scriptURL =
-        "https://script.google.com/macros/s/AKfycbzUYgHL9jgyb-UDWldBMuP9u1AqQQKaptcl1W60R0HLimEqZBFte-5r46wEHbLyLkMqjg/exec";
+        "https://script.google.com/macros/s/AKfycbwxfcFIHMWwrfErQ6JBUUUqg4cIJnnqj43B7gPzQSoGVnGwWPBo-tIANDnYNE1HNrc0CQ/exec";
       const form = document.forms["submit-to-google-sheet"];
       const msg = document.getElementById("msg");
 
