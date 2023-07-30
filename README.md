@@ -1,7 +1,7 @@
 # Personal_portfolio
 # Personal Portfolio Page
 
-![Portfolio Screenshot](images\portfolio-screenshot.png) (Replace `portfolio-screenshot.png` with an actual screenshot of your portfolio)
+![Portfolio Screenshot](images\portfolio-screenshot.png)
 
 ## Description
 
@@ -28,7 +28,7 @@ This is my personal portfolio page showcasing my skills, projects, work experien
 
 ## Screenshot
 
-![Portfolio Screenshot](images\portfolio-screenshot.png) (Replace `portfolio-screenshot.png` with an actual screenshot of your portfolio)
+![Portfolio Screenshot](images\portfolio-screenshot.png) 
 
 ## Installation
 
