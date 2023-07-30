@@ -310,8 +310,8 @@ nav ul li {
   margin: 3.2rem auto;
   width: fit-content;
   padding: 0.8rem 1.8rem;
-  border: 1px solid #ff004f;
   color: white;
+  border: 1px solid #ff004f;
   border-radius: 8px;
   text-decoration: none;
   font-size: 1rem;
@@ -394,6 +394,14 @@ form{
   display: inline-block;
   margin: 1.2rem 0;
   background: #ff004f;
+  transition: all 0.5s;
+  border: 0px;
+}
+
+.btn.btn2:hover{
+  cursor: pointer;
+  background-color: #b30037;
+
 }
 
 
