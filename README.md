@@ -1,6 +1,6 @@
 # Personal_portfolio
 
-![Portfolio Screenshot](images\portfolio-screenshot.png)
+![Portfolio Screenshot](images/portfolio-screenshot.png)
 
 ## Description
 
