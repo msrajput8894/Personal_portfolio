@@ -17,6 +17,7 @@ nav {
   padding: 1rem 0;
 }
 
+
 .logo {
   font-size: 3rem;
   font-weight: 700;
@@ -55,15 +56,34 @@ nav ul li {
   width: 100%;
 }
 
+
+/* ------------------Mobile Navigation-------------- */
+
+nav .fa-solid{
+  display: none;
+}
+
+
+
+
+
+
+
 /* ------------------------Home section ----------------------- */
+
+
 
 .home {
   height: 100vh;
   width: 100vw;
-  background-image: url(images/back.jpg);
+  background-image: url(images/background-desktop.png);
   background-size: cover;
   background-position: center;
   margin-bottom: 4.8rem;
+}
+
+.main-header{
+  justify-content: flex-end;
 }
 
 .header-text {
@@ -448,4 +468,6 @@ footer{
 .footer p i{
   color: #ff004f;
 }
+
+
 

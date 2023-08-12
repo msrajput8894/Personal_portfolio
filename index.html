@@ -6,6 +6,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="mediaqueries.css">
     <script defer src="script.js"></script>
 
     <script
@@ -17,14 +18,19 @@
     <header class="header">
       <div class="container">
         <nav class="flex">
+          
           <p class="logo"><span class="red">M</span>ahendra.</p>
-          <ul class="nav-list flex">
+          <ul class="nav-list flex" id="sidemenu">
             <li><a href="#home" class="nav-links">Home</a></li>
             <li><a href="#about" class="nav-links">About</a></li>
             <li><a href="#services" class="nav-links">Services</a></li>
             <li><a href="#portfolio" class="nav-links">Portfolio</a></li>
             <li><a href="#contact" class="nav-links">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          
+        
         </nav>
       </div>
     </header>
@@ -33,7 +39,7 @@
       <!-- ----------------Home section----------------- -->
       <section class="home" id="home">
         <div class="container">
-          <div class="main-header">
+          <div class="main-header flex">
             <div class="header-text flex">
               <p class="title">UI/UX Designer</p>
               <h1 class="primary-heading">
@@ -281,16 +287,17 @@
         </div>
       </section>
 
-      <footer>
-        <div class="container">
-          <div class="footer">
-            <p>
-              copyright &copy; at Mahendra, Made with
-              <i class="fa-solid fa-heart"></i> by Mahendra Rajput
-            </p>
-          </div>
-        </div>
-      </footer>
+
     </main>
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <p>
+            copyright &copy; at Mahendra, Made with
+            <i class="fa-solid fa-heart"></i> by Mahendra Rajput
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
