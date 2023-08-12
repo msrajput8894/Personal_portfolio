@@ -23,6 +23,9 @@ nav {
   font-weight: 700;
 }
 
+
+
+
 .nav-list {
   gap: 3rem;
 }
@@ -103,6 +106,101 @@ nav .fa-solid{
   font-size: 4.8rem;
   line-height: 1.3;
 }
+
+
+/* --------------Animation code------------ */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes parallax {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-40px); /* Adjust the value as needed */
+  }
+}
+
+@keyframes colorChange {
+  0%, 100% {
+    color: white;
+  }
+  50% {
+    color: #ff004f;
+  }
+}
+
+@keyframes nameColorChange {
+  0%, 100% {
+    color: white;
+  }
+  25% {
+    color: #ff004f;
+  }
+  50% {
+    color: white;
+  }
+  75% {
+    color: #ff004f;
+  }
+}
+
+/* .title, .red {
+  animation: fadeIn 1s ease forwards, colorChange 6s infinite linear, parallax 6s alternate infinite ease-in-out;
+}
+
+.red::before {
+  animation: fadeIn 1s ease forwards, nameColorChange 6s infinite linear, parallax 6s alternate infinite ease-in-out;
+} */
+
+
+/* -------------logo animation------------ */
+/* Add this code to your existing CSS */
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+    text-shadow: 0 0 10px rgba(255, 0, 79, 0.8); /* Change the color and values as needed */
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 700;
+  animation: pulsate 3s infinite ease-in-out;
+}
+.logo{
+  animation: fadeIn 1s ease forwards, colorChange 6s infinite linear, pulsate 3s infinite ease-in-out,
+}
+
+.title, .red {
+  animation: fadeIn 1s ease forwards, colorChange 6s infinite linear, pulsate 3s infinite ease-in-out, parallax 6s alternate infinite ease-in-out;
+}
+
+.red::before {
+  /* ... your existing ::before styles ... */
+  animation: fadeIn 1s ease forwards, nameColorChange 6s infinite linear, pulsate 3s infinite ease-in-out, parallax 6s alternate infinite ease-in-out;
+}
+
+
 
 /* -----------------------About section---------------------- */
 

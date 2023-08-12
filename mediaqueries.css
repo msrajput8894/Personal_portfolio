@@ -13,32 +13,33 @@
 
 @media only screen and (max-width:1050px){
   html{
-    font-size: 80%;
+    font-size: 90%;
   }
 }
 
 @media only screen and(max-width:900px){
   html{
-    font-size: 70%;
+    font-size: 80%;
   }
 }
 
 
 @media only screen and (max-width:800px){
   html{
-    font-size: 60%;
+    font-size: 70%;
   }
 }
 
 
 @media only screen and (max-width:650px){
   html{
-    font-size: 60%;
+    font-size: 70%;
     
   }
 
   .home{
-    background-image: url(images/background-phone.png);
+    background: #000;
+    /* background-image: url(images/background-phone.png); */
   }
 
   /* ---------------mobile navigation--------------- */
@@ -118,7 +119,7 @@ nav ul .fa-solid{
     gap: 3.2rem;
     justify-content: center;
     align-items: center;
-    width: 25rem;
+    width: 23rem;
     
   }
 
@@ -127,7 +128,7 @@ nav ul .fa-solid{
     grid-template-columns: repeat(1, 1fr);
     gap: 3.2rem;
     margin-top: 2rem;
-    width: 90%;
+    width: 100%;
   }
   .about-col-1, .about-col-2{
     flex-basis: 100%;
