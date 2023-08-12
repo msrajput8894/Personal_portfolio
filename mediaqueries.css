@@ -1,0 +1,151 @@
+/* ---------------header------------------- */
+
+/* Existing header styles */
+
+@media only screen and (max-width: 1200px) {
+
+  html{
+    font-size: 90%;
+  }
+
+}
+
+
+@media only screen and (max-width:1050px){
+  html{
+    font-size: 80%;
+  }
+}
+
+@media only screen and(max-width:900px){
+  html{
+    font-size: 70%;
+  }
+}
+
+
+@media only screen and (max-width:800px){
+  html{
+    font-size: 60%;
+  }
+}
+
+
+@media only screen and (max-width:650px){
+  html{
+    font-size: 60%;
+    
+  }
+
+  .home{
+    background-image: url(images/background-phone.png);
+  }
+
+  /* ---------------mobile navigation--------------- */
+
+
+
+  
+nav ul{
+  background: #ff004f;
+  position: fixed;
+  top: 0;
+  right: -20rem;
+  width: 20rem;
+  height: 100vh;
+  padding-top: 5rem;
+  z-index: 3333;
+  transition: all 0.5s;
+}
+
+.nav-list{
+  flex-direction: column;
+}
+
+nav ul li{
+  display: block;
+  margin: 1.5rem;
+}
+
+nav ul .fa-solid{
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  cursor: pointer;
+}
+
+
+
+
+  nav .fa-solid{
+    display: block;
+    font-size: 2rem;
+  }
+
+  .row{
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+  }
+
+  .work-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .section-heading{
+    font-size: 2.4rem;
+  }
+  
+}
+
+@media only screen and (max-width:550px) {
+
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3.2rem;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    
+  }
+
+  .work-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3.2rem;
+    margin-top: 2rem;
+    width: 90%;
+  }
+  .about-col-1, .about-col-2{
+    flex-basis: 100%;
+  }
+
+  .section-heading{
+    margin-top: 1.8rem;
+    font-size: 2.2rem;
+  }
+  
+
+  .left-contact, .right-contact{
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+
