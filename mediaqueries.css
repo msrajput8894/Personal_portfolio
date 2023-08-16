@@ -26,7 +26,7 @@
 
 @media only screen and (max-width:800px){
   html{
-    font-size: 70%;
+    font-size: 80%;
   }
 }
 
@@ -48,11 +48,11 @@
 
   
 nav ul{
-  background: #ff004f;
+  background: #ff6695;
   position: fixed;
   top: 0;
-  right: -20rem;
-  width: 20rem;
+  right: -12rem;
+  width: 12rem;
   height: 100vh;
   padding-top: 5rem;
   z-index: 3333;
@@ -68,20 +68,35 @@ nav ul li{
   margin: 1.5rem;
 }
 
+.nav-links:hover {
+  color: #ff004f;
+}
+
 nav ul .fa-solid{
   position: absolute;
   top: 2rem;
   left: 2rem;
   cursor: pointer;
+  transition: all 0.5s;
 }
 
+nav ul .fa-solid:hover{
+  color: #ff004f;
+}
 
 
 
   nav .fa-solid{
     display: block;
     font-size: 2rem;
+    transition: all 0.5s;
   }
+
+  nav .fa-solid:hover{
+    color: #ff004f;
+  }
+
+  /* ----------------------------------------------- */
 
   .row{
     flex-wrap: wrap;
