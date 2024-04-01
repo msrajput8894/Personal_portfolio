@@ -3,47 +3,117 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+
+    <!-- Title of our webpage -->
+    <title>Mahendra's Portfolio - Get your website ready!</title>
+
+    <!-- fevicon for our page -->
+    <link rel="icon" href="images/logos/fevicon.png" />
+
+    <link rel="apple-touch-icon" href="images/logos/apple-touch-icon.png" />
+
+    <!-- manifest file link -->
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <!-- main style sheet link -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- general stylesheet link -->
     <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="mediaqueries.css">
+
+    <!-- media queries style sheet link -->
+    <link rel="stylesheet" href="mediaqueries.css" />
+
+    <!-- JavaScript file link -->
     <script defer src="script.js"></script>
 
+    <!-- fontawesome kit link -->
     <script
       src="https://kit.fontawesome.com/bab7bad494.js"
       crossorigin="anonymous"
     ></script>
   </head>
+
+  <!-- Body starts from here -->
   <body>
+    <!-- top header -->
     <header class="header">
       <div class="container">
+        <!-- nav bar code -->
         <nav class="flex">
+          <!-- Logo -->
+
           <p class="logo"><span class="red">M</span>ahendra.</p>
+
+          <!-- menu items list -->
           <ul class="nav-list flex" id="sidemenu">
-            <li><a href="#home" class="nav-links" onclick="closemenu()">Home</a></li>
-            <li><a href="#about" class="nav-links" onclick="closemenu()">About</a></li>
-            <li><a href="#services" class="nav-links" onclick="closemenu()">Services</a></li>
-            <li><a href="#portfolio" class="nav-links" onclick="closemenu()">Portfolio</a></li>
-            <li><a href="#contact" class="nav-links" onclick="closemenu()">Contact</a></li>
+            <!-- Home Menu item -->
+            <li>
+              <a href="#home" class="nav-links" onclick="closemenu()">Home</a>
+            </li>
+
+            <!-- About menu item -->
+            <li>
+              <a href="#about" class="nav-links" onclick="closemenu()">About</a>
+            </li>
+
+            <!-- Services menu item -->
+            <li>
+              <a href="#services" class="nav-links" onclick="closemenu()"
+                >Services</a
+              >
+            </li>
+
+            <!-- Portfolio menu item -->
+            <li>
+              <a href="#portfolio" class="nav-links" onclick="closemenu()"
+                >Portfolio</a
+              >
+            </li>
+
+            <!-- contact menu item -->
+            <li>
+              <a href="#contact" class="nav-links" onclick="closemenu()"
+                >Contact</a
+              >
+            </li>
+
+            <!-- close menu icon -->
             <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <!-- End of menu item list -->
+
+          <!-- Open Menu Icon -->
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
+        <!-- End of nav bar -->
       </div>
     </header>
-    
+    <!-- End of header element -->
 
+    <!-- Main Starts from here -->
+    <!-- this includes all code of our landing page except header and footer element -->
     <main>
       <!-- ----------------Home section----------------- -->
       <section class="home" id="home">
         <div class="container">
-          <div class="main-header flex">
-            <div class="header-text flex">
-              <p class="title ">UI/UX Designer</p>
-              <h1 class="primary-heading">
-                Hi, I'm <span class="red">Mahendra</span> <br />
-                Rajput from India
-              </h1>
+          <div class="row flex">
+            <div class="img-box">
+              <img src="images/myphoto.png" alt="my photo" />
+            </div>
+
+            <div class="main-header flex">
+              <!-- title and primary heading container -->
+              <div class="header-text flex">
+                <!-- Title -->
+                <p class="title">UI/UX Designer</p>
+
+                <!-- Primary heading -->
+                <h1 class="primary-heading">
+                  Hi, I'm <span class="red">Mahendra</span> <br />
+                  Rajput from India
+                </h1>
+              </div>
             </div>
           </div>
         </div>
@@ -53,16 +123,28 @@
 
       <section class="about" id="about">
         <div class="container">
+          <!-- row container which contains two columns about-col-1 and about col-1 -->
           <div class="row flex">
-            <div class="aobut-col-1">
+            <!-- left column -->
+            <div class="about-col-1">
               <img src="images/My photo.jpg" alt="" class="my-photo" />
             </div>
+
+            <!-- Right column -->
             <div class="about-col-2">
+              <!-- section heading -->
               <h2 class="section-heading">About Me</h2>
               <p class="description">
                 I am a software engineer with 2 years of experience,
-                specializing in frontend technologies. I am passionate about
-                creating user-friendly and visually appealing web applications.
+                specializing in frontend technologies.
+              </p>
+
+              <p class="description">
+                I am passionate about creating user-friendly and visually
+                appealing web applications.
+              </p>
+
+              <p class="description">
                 With a strong foundation in HTML, CSS, and JavaScript, I strive
                 to deliver high-quality code and delightful user experiences.
               </p>
@@ -246,7 +328,10 @@
                   class="social-link"
                   ><i class="fa-brands fa-instagram"></i
                 ></a>
-                <a target="_blank" href="https://twitter.com/Mahendraraj8894" class="social-link"
+                <a
+                  target="_blank"
+                  href="https://twitter.com/Mahendraraj8894"
+                  class="social-link"
                   ><i class="fa-brands fa-twitter"></i
                 ></a>
               </div>
@@ -284,8 +369,6 @@
           <span id="msg"></span>
         </div>
       </section>
-
-
     </main>
     <footer>
       <div class="container">

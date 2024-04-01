@@ -1,4 +1,6 @@
 /* ---------------header------------------- */
+
+/* -----Header styles----- */
 .header {
   background-color: #000;
   position: fixed;
@@ -10,6 +12,7 @@
   z-index: 999;
 }
 
+/* ---- nav bar styles ---- */
 nav {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -17,14 +20,18 @@ nav {
   padding: 1rem 0;
 }
 
-
+/* ----logo styles ---- */
 .logo {
-  font-size: 3rem;
+  font-size: 2.6rem;
   font-weight: 700;
+  padding: 5px 15px;
+  display: inline-block;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  animation: borderAnimation 5s infinite;
 }
 
-
-
+/* ---- nav list styles */
 
 .nav-list {
   gap: 3rem;
@@ -59,34 +66,32 @@ nav ul li {
   width: 100%;
 }
 
-
 /* ------------------Mobile Navigation-------------- */
 
-nav .fa-solid{
+/* to by default hide the mobile navigation display */
+nav .fa-solid {
   display: none;
 }
 
-
-
-
-
-
-
 /* ------------------------Home section ----------------------- */
 
-
-
 .home {
+  margin-top: 7rem;
   height: 100vh;
   width: 100vw;
-  background-image: url(images/background-desktop.png);
-  background-size: cover;
-  background-position: center;
   margin-bottom: 4.8rem;
 }
 
-.main-header{
-  justify-content: flex-end;
+.img-box {
+  display: flex;
+  width: 90%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 6rem;
+}
+
+.main-header {
+  justify-content: center;
 }
 
 .header-text {
@@ -94,7 +99,8 @@ nav .fa-solid{
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 9.6rem 0;
+
+  /* padding: 6.4rem 0; */
 }
 
 .title {
@@ -106,7 +112,6 @@ nav .fa-solid{
   font-size: 4.8rem;
   line-height: 1.3;
 }
-
 
 /* --------------Animation code------------ */
 
@@ -131,7 +136,8 @@ nav .fa-solid{
 }
 
 @keyframes colorChange {
-  0%, 100% {
+  0%,
+  100% {
     color: white;
   }
   50% {
@@ -140,7 +146,8 @@ nav .fa-solid{
 }
 
 @keyframes nameColorChange {
-  0%, 100% {
+  0%,
+  100% {
     color: white;
   }
   25% {
@@ -154,18 +161,22 @@ nav .fa-solid{
   }
 }
 
-/* .title, .red {
-  animation: fadeIn 1s ease forwards, colorChange 6s infinite linear, parallax 6s alternate infinite ease-in-out;
+/* -------------logo animation------------ */
+
+/* for animating the logo border */
+@keyframes borderAnimation {
+  0% {
+    border-color: #ff004f; /* Initial color */
+  }
+  50% {
+    border-color: #997799; /* Midway color */
+  }
+  100% {
+    border-color: #ff004f; /* Final color */
+  }
 }
 
-.red::before {
-  animation: fadeIn 1s ease forwards, nameColorChange 6s infinite linear, parallax 6s alternate infinite ease-in-out;
-} */
-
-
-/* -------------logo animation------------ */
-/* Add this code to your existing CSS */
-
+/* animation for .red and .title class */
 @keyframes pulsate {
   0% {
     transform: scale(1);
@@ -174,7 +185,7 @@ nav .fa-solid{
   50% {
     transform: scale(1.1);
     opacity: 1;
-    text-shadow: 0 0 10px rgba(255, 0, 79, 0.8); /* Change the color and values as needed */
+    text-shadow: 0 0 10px rgba(255, 0, 79, 0.8);
   }
   100% {
     transform: scale(1);
@@ -182,31 +193,25 @@ nav .fa-solid{
   }
 }
 
-.logo {
-  font-size: 3rem;
-  font-weight: 700;
-  animation: pulsate 3s infinite ease-in-out;
-}
-.logo{
-  animation: fadeIn 1s ease forwards, colorChange 6s infinite linear, pulsate 3s infinite ease-in-out,
-}
-
-.title, .red {
-  animation: fadeIn 1s ease forwards, colorChange 6s infinite linear, pulsate 3s infinite ease-in-out, parallax 6s alternate infinite ease-in-out;
+.title,
+.red {
+  animation: fadeIn 1s ease forwards, colorChange 6s infinite linear,
+    pulsate 3s infinite ease-in-out, parallax 6s alternate infinite ease-in-out;
 }
 
 .red::before {
-  /* ... your existing ::before styles ... */
-  animation: fadeIn 1s ease forwards, nameColorChange 6s infinite linear, pulsate 3s infinite ease-in-out, parallax 6s alternate infinite ease-in-out;
+  animation: fadeIn 1s ease forwards, nameColorChange 6s infinite linear,
+    pulsate 3s infinite ease-in-out, parallax 6s alternate infinite ease-in-out;
 }
-
-
 
 /* -----------------------About section---------------------- */
 
 #about {
+  display: flex;
+  justify-content: center;
   color: #ababab;
   margin-bottom: 4.8rem;
+  overflow: hidden;
 }
 
 .row {
@@ -216,7 +221,7 @@ nav .fa-solid{
 }
 
 .my-photo {
-  width: 30rem;
+  width: 25rem;
   height: 30rem;
   border-radius: 15px;
   display: inline-block;
@@ -240,7 +245,8 @@ nav .fa-solid{
 .description {
   font-size: 1.1rem;
   line-height: 1.2;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1rem;
+  padding-right: 3rem;
 }
 
 .tab-titles {
@@ -253,6 +259,7 @@ nav .fa-solid{
   font-weight: 500;
   cursor: pointer;
   position: relative;
+  margin-top: 2rem;
 }
 
 .tab-links::after {
@@ -300,6 +307,8 @@ nav .fa-solid{
 
 #services {
   margin-bottom: 4.8rem;
+  display: flex;
+  justify-content: center;
 }
 
 .services-list {
@@ -422,8 +431,7 @@ nav .fa-solid{
   text-align: center;
 }
 
-
-.btn{
+.btn {
   display: block;
   margin: 3.2rem auto;
   width: fit-content;
@@ -434,81 +442,74 @@ nav .fa-solid{
   text-decoration: none;
   font-size: 1rem;
   font-weight: 500;
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
-.btn:hover{
+.btn:hover {
   background: #ff004f;
 }
 
 /* -------------------Contact Section--------------------- */
 
-#contact{
+#contact {
   margin-bottom: 4.8rem;
 }
 
-.left-contact{
+.left-contact {
   flex-direction: column;
   gap: 1.2rem;
   flex-basis: 35%;
 }
 
-.left-contact p i{
+.left-contact p i {
   margin-right: 0.4rem;
   color: #ff004f;
   cursor: pointer;
 }
 
-.left-contact p{
+.left-contact p {
   display: block;
-  
-
 }
 
-.left-contact p a{
+.left-contact p a {
   text-decoration: none;
   color: #fff;
   font-size: 1.2rem;
   transition: all 0.5s;
 }
 
-.left-contact p a:hover{
-color: #ff004f;
+.left-contact p a:hover {
+  color: #ff004f;
 }
 
-
-
-
-.social-links{
+.social-links {
   gap: 2.4rem;
-  
 }
 
-.social-links a i{
+.social-links a i {
   font-size: 2rem;
   margin-top: 1.2rem;
   color: #ababab;
   transition: all 0.5s;
 }
 
-.social-links a i:hover{
+.social-links a i:hover {
   color: #ff004f;
   transform: translateY(-5px);
 }
 
-.right-contact{
+.right-contact {
   flex-basis: 65%;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
   width: 100%;
 }
 
-
-.btn.btn2{
+.btn.btn2 {
   display: inline-block;
   margin: 1.2rem 0;
   background: #ff004f;
@@ -516,14 +517,13 @@ form{
   border: 0px;
 }
 
-.btn.btn2:hover{
+.btn.btn2:hover {
   cursor: pointer;
   background-color: #b30037;
-
 }
 
-
-form input, form textarea{
+form input,
+form textarea {
   width: 100%;
   background: #262626;
   font-size: 1.2rem;
@@ -535,11 +535,11 @@ form input, form textarea{
   border-radius: 10px;
 }
 
-form .btn2{
+form .btn2 {
   cursor: pointer;
 }
 
-#msg{
+#msg {
   color: #61b752;
   display: block;
   margin-top: -0.5rem;
@@ -548,24 +548,20 @@ form .btn2{
   font-size: 1rem;
 }
 
-
 /* ---------------footer------------------ */
 
-footer{
+footer {
   background: #262626;
 }
 
-.footer{
+.footer {
   display: block;
   margin: 0 auto;
   text-align: center;
-  
+
   padding: 1.2rem;
 }
 
-.footer p i{
+.footer p i {
   color: #ff004f;
 }
-
-
-
