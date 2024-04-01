@@ -2,17 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "poppins", sans-serif;
+  
 }
 
 .html {
   font-size: 62.5%;
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 body {
   background-color: #000;
   color: #fff;
+  font-family: "poppins", sans-serif;
   /* overflow: hidden; */
 }
 

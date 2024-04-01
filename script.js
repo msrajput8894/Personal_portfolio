@@ -63,3 +63,23 @@ const scriptURL =
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
       }
+
+
+
+      // script for side menu
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right ="0";
+      }
+
+
+
+      function closemenu(){
+        sidemenu.style.right ="-20rem";
+      }
+
+
+
+
