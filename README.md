@@ -1,10 +1,13 @@
 # Personal_portfolio
 
-![Portfolio Screenshot](images/portfolio-screenshot.png)
+
+![Portfolio Screenshot](images\portfolio-screenshot.png)
 
 ## Description
 
-Welcome to my personal portfolio page, where I showcase my skills, projects, work experience, and education. This portfolio is a representation of my journey as a developer, and it's built using HTML, CSS, and JavaScript.
+This is my personal portfolio page showcasing my skills, projects, work experience, and education. The portfolio is built using HTML, CSS, and JavaScript.
+=======
+
 
 ## Table of Contents
 
@@ -27,11 +30,19 @@ Welcome to my personal portfolio page, where I showcase my skills, projects, wor
 
 ## Screenshot
 
+
+![Portfolio Screenshot](images\portfolio-screenshot.png) 
+
+## Installation
+
+1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
+=======
 ![Portfolio Screenshot](images/portfolio-screenshot.png) 
 
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/msrajput8894/Personal_portfolio.git`
+
 2. Open the `index.html` file in your web browser.
 
 ## Usage
@@ -53,4 +64,7 @@ Feel free to explore the different sections of the portfolio to learn more about
 
 ## License
 
+
 [MIT License](LICENSE) (Replace `LICENSE` with the appropriate license file for your project)
+=======
+
