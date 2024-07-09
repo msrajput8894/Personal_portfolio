@@ -27,7 +27,11 @@ This is my personal portfolio page showcasing my skills, projects, work experien
 
 ## Screenshot
 
+<<<<<<< HEAD
 ![Portfolio Screenshot](images/portfolio-screenshot.png)
+=======
+![Portfolio Screenshot](images/portfolio-screenshot.png) 
+>>>>>>> eabe1a62bf9663f34400d5264ac6cd498262b5a5
 
 ## Installation
 
