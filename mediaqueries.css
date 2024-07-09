@@ -21,6 +21,32 @@
   html{
     font-size: 80%;
   }
+
+
+  
+  .img-box{
+    width: 100%;
+    padding: 0;
+  }
+
+  .img-box img{
+    width: 100%;
+    
+  }
+  .header-text{
+    height: 45vh;
+    padding: 0;
+  }
+
+  .home{
+    height: auto;
+  }
+
+  .section-heading{
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 
@@ -28,6 +54,38 @@
   html{
     font-size: 80%;
   }
+  .about-col-1{
+    flex-basis: 30%;
+  }
+  .about-col-2{
+    flex-basis: 70%;
+  }
+
+
+  
+  .img-box{
+    width: 100%;
+    padding: 0;
+  }
+
+  .img-box img{
+    width: 100%;
+    
+  }
+  .header-text{
+    height: 45vh;
+    padding: 0;
+  }
+
+  .home{
+    height: auto;
+  }
+
+  .section-heading{
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
 
@@ -39,6 +97,30 @@
 
   .home{
     background: #000;
+
+    
+  .img-box{
+    width: 100%;
+    padding: 0;
+  }
+
+  .img-box img{
+    width: 100%;
+    
+  }
+  .header-text{
+    height: 45vh;
+    padding: 0;
+  }
+
+  .home{
+    height: auto;
+  }
+
+  .section-heading{
+    display: flex;
+    justify-content: center;
+  }
     /* background-image: url(images/background-phone.png); */
   }
 
@@ -159,6 +241,33 @@ nav ul .fa-solid:hover{
     flex-basis: 100%;
     justify-content: center;
     align-items: center;
+  }
+
+  .btn{
+    font-size:1rem ;
+  }
+
+  .img-box{
+    width: 100%;
+    padding: 0;
+  }
+
+  .img-box img{
+    width: 100%;
+    
+  }
+  .header-text{
+    height: 45vh;
+    padding: 0;
+  }
+
+  .home{
+    height: auto;
+  }
+
+  .section-heading{
+    display: flex;
+    justify-content: center;
   }
 }
 
