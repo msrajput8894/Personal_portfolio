@@ -1,7 +1,3 @@
-
-
-
-
 // Add an event listener to all links/buttons that should trigger smooth scrolling
 document.addEventListener('DOMContentLoaded', () => {
   const links = document.querySelectorAll('a[href^="#"]');
