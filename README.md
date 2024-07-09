@@ -1,13 +1,10 @@
 # Personal_portfolio
 
-
-![Portfolio Screenshot](images\portfolio-screenshot.png)
+![Portfolio Screenshot](images/portfolio-screenshot.png)
 
 ## Description
 
 This is my personal portfolio page showcasing my skills, projects, work experience, and education. The portfolio is built using HTML, CSS, and JavaScript.
-=======
-
 
 ## Table of Contents
 
@@ -30,24 +27,16 @@ This is my personal portfolio page showcasing my skills, projects, work experien
 
 ## Screenshot
 
-
-![Portfolio Screenshot](images\portfolio-screenshot.png) 
-
-## Installation
-
-1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
-=======
 ![Portfolio Screenshot](images/portfolio-screenshot.png) 
 
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/msrajput8894/Personal_portfolio.git`
-
 2. Open the `index.html` file in your web browser.
 
 ## Usage
 
-Visit the live portfolio at: [https://personal-porfolio-mahendra.netlify.app/](https://personal-porfolio-mahendra.netlify.app/)
+Visit the live portfolio at: [https://personal-portfolio-mahendra.netlify.app/](https://personal-portfolio-mahendra.netlify.app/)
 
 Feel free to explore the different sections of the portfolio to learn more about me and my work.
 
@@ -64,7 +53,4 @@ Feel free to explore the different sections of the portfolio to learn more about
 
 ## License
 
-
-[MIT License](LICENSE) (Replace `LICENSE` with the appropriate license file for your project)
-=======
-
+[MIT License](LICENSE)
