@@ -99,7 +99,11 @@
         <div class="container">
           <div class="row flex">
             <div class="img-box">
-              <img src="images/myphoto.png" alt="my photo" />
+              <img
+                class="my-photo header-img"
+                src="images/myphoto.png"
+                alt="my photo"
+              />
             </div>
 
             <div class="main-header flex">
@@ -127,71 +131,85 @@
           <div class="row flex">
             <!-- left column -->
             <div class="about-col-1">
-              <img src="images/My photo.jpg" alt="" class="my-photo" />
+              <img src="images/tech-stack.png" alt="" class="my-photo" />
             </div>
 
             <!-- Right column -->
             <div class="about-col-2">
               <!-- section heading -->
               <h2 class="section-heading">About Me</h2>
-              <p class="description">
-                I am a software engineer with 2 years of experience,
-                specializing in frontend technologies.
-              </p>
+              <div class="about-container">
+                <div class="description-container">
+                  <p class="description">
+                    I’m a frontend software engineer with 3 years of experience,
+                    passionate about user-friendly, visually appealing web apps.
+                    Strong in HTML, CSS, and JavaScript.
+                  </p>
 
-              <p class="description">
-                I am passionate about creating user-friendly and visually
-                appealing web applications.
-              </p>
+                  <!-- <p class="description">
+                    I am passionate about creating user-friendly and visually
+                    appealing web applications.
+                  </p> -->
 
-              <p class="description">
-                With a strong foundation in HTML, CSS, and JavaScript, I strive
-                to deliver high-quality code and delightful user experiences.
-              </p>
+                  <!-- <p class="description">
+                    With a strong foundation in HTML, CSS, and JavaScript, I
+                    strive to deliver high-quality code and delightful user
+                    experiences.
+                  </p> -->
+                </div>
 
-              <div class="tab-titles">
-                <p class="tab-links active-link" onclick="opentab('Skills')">
-                  Skills
-                </p>
-                <p class="tab-links" onclick="opentab('Experience')">
-                  Experience
-                </p>
-                <p class="tab-links" onclick="opentab('Education')">
-                  Education
-                </p>
-              </div>
+                <div class="tab-container">
+                  <div class="tab-titles">
+                    <p
+                      class="tab-links active-link"
+                      onclick="opentab('Skills')"
+                    >
+                      Skills
+                    </p>
+                    <p class="tab-links" onclick="opentab('Experience')">
+                      Experience
+                    </p>
+                    <p class="tab-links" onclick="opentab('Education')">
+                      Education
+                    </p>
+                  </div>
 
-              <div class="tab-contents active-tab" id="Skills">
-                <ul>
-                  <li><span>UI/UX</span>Designing Web/App interfaces</li>
-                  <li><span>Web Development</span>Web app development</li>
-                  <li><span>App Development</span>Building Android/iOS apps</li>
-                </ul>
-              </div>
-              <div class="tab-contents" id="Experience">
-                <ul>
-                  <li>
-                    <span>2023 - current</span>Software Engineer at LTIMindtree
-                  </li>
-                  <li>
-                    <span>2022 - 2023</span>Software Engineer at Mindtree
-                    Limited
-                  </li>
-                  <li>
-                    <span>2020 - 2022</span>Production Engineer at SOM Autotech
-                    Pvt Ltd.
-                  </li>
-                </ul>
-              </div>
-              <div class="tab-contents" id="Education">
-                <ul>
-                  <li><span>2014</span>SSC from Maharashtra State Board</li>
-                  <li><span>2016</span>HSC from Maharashtra State Board</li>
-                  <li>
-                    <span>2020</span>Batchlors of Engineering form Pune
-                    University
-                  </li>
-                </ul>
+                  <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                      <li><span>UI/UX</span>Designing Web/App interfaces</li>
+                      <li><span>Web Development</span>Web app development</li>
+                      <li>
+                        <span>App Development</span>Building Android/iOS apps
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="Experience">
+                    <ul>
+                      <li>
+                        <span>2023 - current</span>Software Engineer at
+                        LTIMindtree
+                      </li>
+                      <li>
+                        <span>2022 - 2023</span>Software Engineer at Mindtree
+                        Limited
+                      </li>
+                      <li>
+                        <span>2020 - 2022</span>Production Engineer at SOM
+                        Autotech Pvt Ltd.
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-contents" id="Education">
+                    <ul>
+                      <li><span>2014</span>SSC from Maharashtra State Board</li>
+                      <li><span>2016</span>HSC from Maharashtra State Board</li>
+                      <li>
+                        <span>2020</span>Batchlors of Engineering form Pune
+                        University
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -224,7 +242,7 @@
               </p>
               <a href="#" class="learn-more-btn">Learn more</a>
             </div>
-            <div>
+            <div class="last-service">
               <i class="fa-brands fa-app-store"></i>
               <h2>App Design</h2>
               <p>
@@ -272,7 +290,7 @@
                 ></a>
               </div>
             </div>
-            <div class="work">
+            <div class="work last-work-list">
               <img src="images/work-3.png" alt="web page" />
               <div class="layer">
                 <h3>UsabilityHub clone</h3>
