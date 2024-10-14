@@ -11,17 +11,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Smooth scrolling function with a margin parameter
-function smoothScroll(target, margin) {
+const smoothScroll = (target, margin) => {
   const element = document.querySelector(target);
   const offsetTop =
     element.getBoundingClientRect().top + window.pageYOffset - margin; // Subtract the margin
-  window.scroll({
+  window.scrollTo({
     behavior: "smooth",
     top: offsetTop,
   });
-}
+};
 
-// script for contact form to submit the data to google sheet.
+// Script for contact form to submit the data to Google Sheets
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbwxfcFIHMWwrfErQ6JBUUUqg4cIJnnqj43B7gPzQSoGVnGwWPBo-tIANDnYNE1HNrc0CQ/exec";
 const form = document.forms["submit-to-google-sheet"];
@@ -32,7 +32,7 @@ form.addEventListener("submit", (e) => {
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
       msg.innerHTML = "Message sent successfully";
-      setTimeout(function () {
+      setTimeout(() => {
         msg.innerHTML = "";
       }, 5000);
       form.reset();
@@ -40,32 +40,38 @@ form.addEventListener("submit", (e) => {
     .catch((error) => console.error("Error!", error.message));
 });
 
-//---------------------------------------------------------------------
+// Script for the "About Me" section to navigate to different tabs
+const tablinks = document.getElementsByClassName("tab-links");
+const tabcontents = document.getElementsByClassName("tab-contents");
 
-//script for the about me section to navigate to different tabs
-
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
-
-function opentab(tabname) {
-  for (tablink of tablinks) {
+const opentab = (tabname) => {
+  for (const tablink of tablinks) {
     tablink.classList.remove("active-link");
   }
-  for (tabcontent of tabcontents) {
+  for (const tabcontent of tabcontents) {
     tabcontent.classList.remove("active-tab");
   }
   event.currentTarget.classList.add("active-link");
   document.getElementById(tabname).classList.add("active-tab");
-}
+};
 
-// script for side menu
+// Script for the side menu
+const sidemenu = document.getElementById("sidemenu");
 
-var sidemenu = document.getElementById("sidemenu");
-
-function openmenu() {
+const openmenu = () => {
   sidemenu.style.right = "0";
-}
+};
 
-function closemenu() {
+const closemenu = () => {
   sidemenu.style.right = "-20rem";
-}
+};
+
+const hamMenuIcon = document.querySelector(".fa-bars");
+const closeMenuIcon = document.querySelector(".fa-xmark");
+hamMenuIcon.addEventListener("click", () => {
+  hamMenuIcon.style.display = "none";
+});
+
+closeMenuIcon.addEventListener("click", () => {
+  hamMenuIcon.style.display = "block";
+});

@@ -161,12 +161,12 @@
   /* ---------------mobile navigation--------------- */
 
   nav ul {
-    background: #ff6695;
+    background: rgba(255, 0, 79, 0.8);
     position: fixed;
     top: 0;
     right: -12rem;
     width: 12rem;
-    height: 100vh;
+    height: 50%;
     padding-top: 5rem;
     z-index: 3333;
     transition: all 0.5s;
@@ -174,11 +174,12 @@
 
   .nav-list {
     flex-direction: column;
+    gap: 1.2rem;
   }
 
   nav ul li {
     display: block;
-    margin: 1.5rem;
+    margin: 1rem 1.5rem;
   }
 
   .nav-links:hover {
