@@ -76,3 +76,21 @@ hamMenuIcon.addEventListener("click", () => {
 closeMenuIcon.addEventListener("click", () => {
   hamMenuIcon.style.display = "block";
 });
+
+const workList = document.querySelector(".work-list");
+const workBtn = document.querySelector(".work-btn");
+const workAll = document.querySelectorAll(".work-hidden");
+console.log(workAll);
+
+workBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+  workAll.forEach((work) => {
+    work.classList.toggle("work-hidden");
+
+    if (work.classList.contains("work-hidden")) {
+      workBtn.textContent = "See More";
+    } else {
+      workBtn.textContent = "See Less";
+    }
+  });
+});

@@ -377,11 +377,20 @@ nav .fa-solid {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 2rem;
+  overflow: hidden;
 }
+
 .work {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  max-height: 500px; /* Adjust based on content height */
+  opacity: 1;
+}
+
+.work-hidden {
+  display: none;
 }
 
 .work img {
