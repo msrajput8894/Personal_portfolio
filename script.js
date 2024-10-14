@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
       event.preventDefault(); // Prevent default link behavior (e.g., jumping to the anchor)
       const target = link.getAttribute("href");
       smoothScroll(target, 100); // Specify the desired margin (e.g., 20 pixels)
+      hamMenuIcon.style.display = "block";
     });
   });
 });
