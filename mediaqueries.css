@@ -243,6 +243,11 @@
     justify-self: center;
   }
 
+  .description {
+    text-align: center;
+    padding-right: 0;
+  }
+
   .services-list {
     display: flex;
     flex-direction: column;
